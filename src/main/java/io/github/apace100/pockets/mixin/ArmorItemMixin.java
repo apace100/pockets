@@ -11,7 +11,7 @@ import net.minecraft.inventory.StackReference;
 import net.minecraft.item.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableTextContent;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ClickType;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.collection.DefaultedList;
@@ -65,7 +65,7 @@ public abstract class ArmorItemMixin extends Item {
         if(!PocketUtil.hasPockets(stack)) {
             return;
         }
-        tooltip.add(Text.translatable("item.minecraft.bundle.fullness", PocketUtil.getPocketOccupancy(stack), 64).formatted(Formatting.GRAY));
+        tooltip.add(new TranslatableText("item.minecraft.bundle.fullness", PocketUtil.getPocketOccupancy(stack), 64).formatted(Formatting.GRAY));
     }
 
     @Override
