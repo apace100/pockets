@@ -27,5 +27,16 @@
     "minecraft": "1.19.4",
     "fabric": "*",
     "java": ">=17"
+  },
+
+  "custom": {
+    "mc-publish": {
+      "modrinth": "hAjvvnUD",
+      "curseforge": "828002",
+      "loaders": ["fabric", "quilt"],
+      "dependencies": [
+        "fabric(required){modrinth:P7dR8mSH}{curseforge:306612}#(ignore:github)"
+      ]
+    }
   }
 }
