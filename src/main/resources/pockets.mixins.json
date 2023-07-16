@@ -6,7 +6,7 @@
   "mixins": [
     "ArmorItemMixin",
     "BundleItemMixin",
-    "ItemRendererMixin",
+    "DrawContextMixin",
     "ItemStackMixin"
   ],
   "client": [
